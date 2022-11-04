@@ -1,0 +1,75 @@
+body{
+    background: url('https://cdn.dribbble.com/users/3951514/screenshots/7288432/media/866b49d81c982fdecd5a22de44c5e677.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: Harrington;
+    color: white;
+    font-weight: bold;
+}
+p{
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.quotes{
+    background: url('https://images.template.net/108716/food-blog-background-m1w5n.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.p2{
+    font-family: Forte;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #fbf5f5;
+    text-align: right;
+    margin-right: 5em;
+}
+.p3{
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px #fbf5f5;
+}
+.one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.one .container .card {
+  position: relative;
+  min-width: 550px;
+  height: 470px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 50px;
+  transition: 0.5s;
+}
+
+.one .container .card .box {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  right: 20px;
+  bottom: 30px;
+  background: rgb(134, 35, 18);
+  border-radius: 15px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.one .container .card .box:hover {
+  transform: translateY(-50px);
+  box-shadow: rgb(235, 198, 13);
+}
+
+
+

@@ -4,7 +4,7 @@
     list-style-type: none;
   }
   .body{
-    background: #1E1F25;
+    background-color: #833813;
   }
   ul{
     display: flex;
@@ -116,3 +116,4 @@
     transition: margin-left .5s;
     padding: 16px;
   }
+

@@ -70,6 +70,14 @@ p{
   transform: translateY(-50px);
   box-shadow: rgb(235, 198, 13);
 }
-
+.logo{
+  height: 50px;
+  width: 50px;
+}
+.myFooter{
+  background-color: #000000;
+  column-count: 3;
+  color: #fbf7f5;
+}
 
 

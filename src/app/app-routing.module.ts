@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { GalleryComponent } from './gallery/gallery.component';
 import { PostEditComponent } from './post-edit/post-edit.component';
 import { PostListComponent } from './post-list/post-list.component';
 
@@ -10,7 +12,9 @@ const routes: Routes = [
   {path: 'aut',component:AuthenticationComponent },
   {path: 'post-edit',component:PostEditComponent },
   {path: '',redirectTo:'aut',pathMatch:'full' },
-  {path: 'about',component:AboutComponent}
+  {path: 'about',component:AboutComponent},
+  {path: 'gallery',component:GalleryComponent },
+  {path: 'contactUs',component:ContactUsComponent },
 ];
 
 @NgModule({
@@ -18,4 +22,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const Bitch = [PostEditComponent,PostListComponent,AuthenticationComponent,AboutComponent]
+export const Bitch = [PostEditComponent,PostListComponent,AuthenticationComponent,AboutComponent,GalleryComponent,ContactUsComponent]

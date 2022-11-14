@@ -9,6 +9,9 @@ import { PostEditComponent } from './post-edit/post-edit.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { AboutComponent } from './about/about.component';
     PostEditComponent,
     AuthenticationComponent,
     HeaderComponent,
-    AboutComponent
+    AboutComponent,
+    GalleryComponent,
+    ContactUsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

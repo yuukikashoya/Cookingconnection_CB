@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
+import { LoginSignupComponent } from './login-signup/login-signup.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FooterComponent } from './footer/footer.component';
     AboutComponent,
     GalleryComponent,
     ContactUsComponent,
-    FooterComponent
+    FooterComponent,
+    LoginSignupComponent
   ],
   imports: [
     BrowserModule,

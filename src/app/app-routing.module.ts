@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { LoginSignupComponent } from './login-signup/login-signup.component';
 import { PostEditComponent } from './post-edit/post-edit.component';
 import { PostListComponent } from './post-list/post-list.component';
 
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'about',component:AboutComponent},
   {path: 'gallery',component:GalleryComponent },
   {path: 'contactUs',component:ContactUsComponent },
+  {path: 'login',component:LoginSignupComponent },
 ];
 
 @NgModule({

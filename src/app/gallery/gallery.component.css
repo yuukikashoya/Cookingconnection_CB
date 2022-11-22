@@ -1,53 +1,47 @@
-/* .gallery{
-  width: 90%;
-  margin: auto;
-  display: grid;
- 
+.BODY{
+    background-image: url('https://wallpaperaccess.com/full/636127.jpg');
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-   */
-   
-   
-   div.gallery {
-    margin: 4px;
-    border: 1px solid rgb(8, 8, 7);
-   float: left;
+
+.Gallery_Container {
+    max-width: 100%;
+    margin: auto;
+   overflow: auto;
+    padding-top: 110px;
+    padding-left: 90px;
+  }
+  .Gallery_Container h1 {
+   font-size: 40px;
+   color: rgba(1, 1, 0, 0.946);
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   line-height: 70px;
+   padding-bottom: 30px;
+   padding-right: 100px;
+   text-align: center;
+  }
+  div.Gallery {
+    margin: 5px;
+    float: left;
     width: 250px;
   
   }
-  
-  div.gallery:hover {
-    border: 1px solid rgb(25, 23, 23);
-    
-  }
-  
-  div.gallery img {
-    width: 75%;
+  .Gallery img {
+    width: 100%;
     height: auto;
-
-  }
-  
-  div.desc {
-    padding: 0px;
-    text-align: left;
-  }
-
-
-h1{
-    text-align: center;
-    font-family: fantasy;
-    color: rgba(17, 16, 14, 0.938);
-}
-
-.body {
-    background-image: url('https://wallpaperaccess.com/full/626427.jpg');
+    justify-content: space-between;
     
-    height: 2500px; 
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
+  }
+  .Desc {
+    color: rgb(19, 18, 18);
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
     
-
-  } 
-
-
-  
+  }

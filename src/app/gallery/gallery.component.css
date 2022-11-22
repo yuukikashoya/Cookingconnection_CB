@@ -8,10 +8,10 @@
 
 .Gallery_Container {
     max-width: 100%;
-    margin: auto;
+    margin: 25px;
    overflow: auto;
     padding-top: 110px;
-    padding-left: 90px;
+    padding-left:110px;
   }
   .Gallery_Container h1 {
    font-size: 40px;
@@ -27,12 +27,13 @@
     margin: 5px;
     float: left;
     width: 250px;
+    
   
   }
   .Gallery img {
     width: 100%;
     height: auto;
-    justify-content: space-between;
+    
     
   }
   .Desc {

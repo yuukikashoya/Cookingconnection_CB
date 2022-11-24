@@ -1,0 +1,12 @@
+.procedure{
+    background-image: url('https://i.pinimg.com/564x/36/f5/df/36f5df83daef74551b2971158363b1e9.jpg');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.name{
+    text-align: center;
+}
+

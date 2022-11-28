@@ -41,7 +41,7 @@ textarea {
   margin-left: auto;
   margin-right: auto; 
   position: relative;
-  background: url('https://cdna.artstation.com/p/assets/covers/images/023/463/196/large/juan-chee-cartoon-food-pack.jpg?1579278251');
+  background: url('https://www.itl.cat/pngfile/big/226-2262267_tea-background.jpg');
   background-size: 100% 100%;
 }
 
@@ -90,9 +90,9 @@ input[type='text'], [type='email'], select, textarea {
 	background: none;
   border: none;
 	border-bottom: solid 2px #474544;
-	color: white;
+	color: black;
 	font-size: 1.000em;
-  font-weight: 400;
+  font-weight: bold;
   letter-spacing: 1px;
 	margin: 0em 0 1.875em 0;
 	padding: 0 0 0.875em 0;
@@ -151,7 +151,7 @@ textarea {
 }
 
 ::-webkit-input-placeholder {
-	color: white;
+	color: black;
   font-weight: bold;
 }
 

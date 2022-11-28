@@ -21,7 +21,7 @@ button, select {
 }
 
 button, input, select, textarea {
-  color: #5A5A5A;
+  color: white;
   font: inherit;
   margin: 0;
 }
@@ -35,19 +35,21 @@ textarea {
 }
 
 .container {
-  border: solid 3px #474544;
+  border: solid 3px white;
   max-width: 768px;
   /* margin: 60px auto; */
   margin-left: auto;
   margin-right: auto; 
   position: relative;
-  background-color: white;
+  background: url('https://cdna.artstation.com/p/assets/covers/images/023/463/196/large/juan-chee-cartoon-food-pack.jpg?1579278251');
+  background-size: 100% 100%;
 }
 
 form {
   padding: 37.5px;
   margin: 50px 0;
-  background-color: white;
+  background: transparent;
+  background-size: 100% 100%;
 }
 
 h1 {
@@ -61,7 +63,7 @@ h1 {
 }
 
 .underline {
-  border-bottom: solid 2px #474544;
+  border-bottom: solid 2px white;
   margin: -0.512em auto;
   width: 80px;
 }
@@ -73,7 +75,7 @@ h1 {
 
 .icon {
   display: block;
-  fill: #474544;
+  fill: white;
   height: 50px;
   margin: 0 auto;
   width: 50px;
@@ -88,7 +90,7 @@ input[type='text'], [type='email'], select, textarea {
 	background: none;
   border: none;
 	border-bottom: solid 2px #474544;
-	color: #474544;
+	color: white;
 	font-size: 1.000em;
   font-weight: 400;
   letter-spacing: 1px;
@@ -149,7 +151,8 @@ textarea {
 }
 
 ::-webkit-input-placeholder {
-	color: #474544;
+	color: white;
+  font-weight: bold;
 }
 
 :-moz-placeholder { 
@@ -167,9 +170,9 @@ textarea {
 }
 
 #form_button {
-  background: none;
+  background: black;
   border: solid 2px #474544;
-  color: #474544;
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-family: 'Helvetica', Arial, sans-serif;
@@ -186,8 +189,8 @@ textarea {
 }
 
 #form_button:hover {
-  background: #474544;
-  color: #F2F3EB;
+  background: white;
+  color: black;
 }
 
 @media screen and (max-width: 768px) {

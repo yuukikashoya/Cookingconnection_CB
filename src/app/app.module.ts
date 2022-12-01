@@ -14,6 +14,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginSignupComponent } from './login-signup/login-signup.component';
 import { Gallery2Component } from './gallery2/gallery2.component';
+import { EggComponent } from './egg/egg.component';
+import { SpinachComponent } from './spinach/spinach.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { Gallery2Component } from './gallery2/gallery2.component';
     ContactUsComponent,
     FooterComponent,
     LoginSignupComponent,
-    Gallery2Component
+    Gallery2Component,
+    EggComponent,
+    SpinachComponent
   ],
   imports: [
     BrowserModule,

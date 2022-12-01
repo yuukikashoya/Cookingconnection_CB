@@ -3,9 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { CurryComponent } from './curry/curry.component';
 import { EggComponent } from './egg/egg.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { GarlicbreadComponent } from './garlicbread/garlicbread.component';
+import { KimchiComponent } from './kimchi/kimchi.component';
 import { LoginSignupComponent } from './login-signup/login-signup.component';
 import { MisoComponent } from './miso/miso.component';
 import { PostEditComponent } from './post-edit/post-edit.component';
@@ -29,6 +31,10 @@ const routes: Routes = [
   {path: 'shrimp',component:ShrimpComponent},
   {path: 'miso',component:MisoComponent},
   {path: 'tantanmen',component:TantanmenComponent},
+  {path: 'curry',component:CurryComponent},
+  {path: 'kimchi',component:KimchiComponent},
+
+
 
 
 
@@ -43,4 +49,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const Bitch = [PostEditComponent,PostListComponent,AuthenticationComponent,AboutComponent,GalleryComponent,ContactUsComponent,EggComponent,SpinachComponent,GarlicbreadComponent,ShrimpComponent,MisoComponent,TantanmenComponent]
+export const Bitch = [PostEditComponent,PostListComponent,AuthenticationComponent,AboutComponent,GalleryComponent,ContactUsComponent,EggComponent,SpinachComponent,GarlicbreadComponent,ShrimpComponent,MisoComponent,TantanmenComponent,CurryComponent,KimchiComponent]

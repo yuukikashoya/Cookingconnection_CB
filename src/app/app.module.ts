@@ -20,6 +20,8 @@ import { GarlicbreadComponent } from './garlicbread/garlicbread.component';
 import { ShrimpComponent } from './shrimp/shrimp.component';
 import { MisoComponent } from './miso/miso.component';
 import { TantanmenComponent } from './tantanmen/tantanmen.component';
+import { CurryComponent } from './curry/curry.component';
+import { KimchiComponent } from './kimchi/kimchi.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { TantanmenComponent } from './tantanmen/tantanmen.component';
     GarlicbreadComponent,
     ShrimpComponent,
     MisoComponent,
-    TantanmenComponent
+    TantanmenComponent,
+    CurryComponent,
+    KimchiComponent
   ],
   imports: [
     BrowserModule,

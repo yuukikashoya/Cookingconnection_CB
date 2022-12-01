@@ -16,6 +16,8 @@ import { LoginSignupComponent } from './login-signup/login-signup.component';
 import { Gallery2Component } from './gallery2/gallery2.component';
 import { EggComponent } from './egg/egg.component';
 import { SpinachComponent } from './spinach/spinach.component';
+import { GarlicbreadComponent } from './garlicbread/garlicbread.component';
+import { ShrimpComponent } from './shrimp/shrimp.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { SpinachComponent } from './spinach/spinach.component';
     LoginSignupComponent,
     Gallery2Component,
     EggComponent,
-    SpinachComponent
+    SpinachComponent,
+    GarlicbreadComponent,
+    ShrimpComponent
   ],
   imports: [
     BrowserModule,

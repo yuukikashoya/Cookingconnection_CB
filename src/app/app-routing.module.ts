@@ -7,10 +7,12 @@ import { EggComponent } from './egg/egg.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { GarlicbreadComponent } from './garlicbread/garlicbread.component';
 import { LoginSignupComponent } from './login-signup/login-signup.component';
+import { MisoComponent } from './miso/miso.component';
 import { PostEditComponent } from './post-edit/post-edit.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { ShrimpComponent } from './shrimp/shrimp.component';
 import { SpinachComponent } from './spinach/spinach.component';
+import { TantanmenComponent } from './tantanmen/tantanmen.component';
 
 const routes: Routes = [
   {path: 'post-list',component:PostListComponent },
@@ -25,6 +27,11 @@ const routes: Routes = [
   {path: 'spinach',component:SpinachComponent },
   {path: 'garlicbread',component:GarlicbreadComponent },
   {path: 'shrimp',component:ShrimpComponent},
+  {path: 'miso',component:MisoComponent},
+  {path: 'tantanmen',component:TantanmenComponent},
+
+
+
 
 
 
@@ -36,4 +43,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const Bitch = [PostEditComponent,PostListComponent,AuthenticationComponent,AboutComponent,GalleryComponent,ContactUsComponent,EggComponent,SpinachComponent,GarlicbreadComponent,ShrimpComponent]
+export const Bitch = [PostEditComponent,PostListComponent,AuthenticationComponent,AboutComponent,GalleryComponent,ContactUsComponent,EggComponent,SpinachComponent,GarlicbreadComponent,ShrimpComponent,MisoComponent,TantanmenComponent]

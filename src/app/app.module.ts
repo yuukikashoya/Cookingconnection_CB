@@ -22,6 +22,7 @@ import { MisoComponent } from './miso/miso.component';
 import { TantanmenComponent } from './tantanmen/tantanmen.component';
 import { CurryComponent } from './curry/curry.component';
 import { KimchiComponent } from './kimchi/kimchi.component';
+import { FormsModule } from '@angular/forms';
 //check
 
 @NgModule({

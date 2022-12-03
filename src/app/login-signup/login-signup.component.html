@@ -13,12 +13,12 @@
                  <hr>
         
               <label for="uname"><b>Username</b></label><br>
-              <input class="line" id="user" type="text" placeholder="Enter Username" name="uname" required>
+              <input class="line" id="user" type="text" [(ngModel)]="emaillog" placeholder="Enter Username/Email" name="uname" required>
               <br>
               <label for="psw"><b>Password</b></label><br>
-              <input class="line" id = "pass" type="password" placeholder="Enter Password" name="psw" required>
+              <input class="line" id = "pass" type="password" [(ngModel)]="passwordlog" placeholder="Enter Password" name="psw" required>
               <br>
-              <button id = "cook" type="submit">Login</button>
+              <button id = "cook" (click)="login()" type="submit">Login</button>
               <br>
               <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -39,29 +39,18 @@
             <p>(◕‿↼)</p>
             <hr>
         
-            <label for="FirstName"><b>First Name</b></label><br>
-            <input id="fname" type="text" placeholder="First Name" name="fname" required>
-            <br>
-            <label for="LastName"><b>Last Name</b></label><br>
-            <input id="lname" type="text" placeholder="Last Name" name="lname" required>
-            <br>
-            <label for="Age"><b>Age</b></label><br>
-            <input id="age" type="text" placeholder="Age" name="age" required>
-            <br>
-            <label for="username"><b>Username</b></label><br>
-            <input id="usrnme" type="text" placeholder="Username" name="usrnme" required>
-            <br>
+            
             <label for="email"><b>Email</b></label><br>
-            <input id="email" type="text" placeholder="Email" name="email" required>
+            <input id="email" type="text" [(ngModel)]="email" placeholder="Email" name="email" required>
             <br>
             <label for="psw"><b>Password</b></label><br>
-            <input id="pass" type="password" placeholder="Password" name="psw" required>
+            <input id="pass" type="password" [(ngModel)]="password" placeholder="Password" name="psw" required>
             <br>
             <label for="psw-repeat"><b>Repeat Password</b></label><br>
-            <input id="repeat" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <input id="repeat" type="password"  [(ngModel)]="repeatpassword" placeholder="Repeat Password" name="psw-repeat" required>
         
             <div class="clearfix">
-              <button id="up" type="submit" class="signupbtn1">Sign Up</button>
+              <button id="up" type="submit"(click)="signup()" class="signupbtn1">Sign Up</button>
               <br>
               <label>
                 <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me             

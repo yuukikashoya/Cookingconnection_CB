@@ -20,6 +20,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginSignupComponent } from './login-signup/login-signup.component';
 import { FormsModule } from '@angular/forms';
+import { CommentComponent } from './comment/comment.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FormsModule } from '@angular/forms';
     GalleryComponent,
     ContactUsComponent,
     FooterComponent,
-    LoginSignupComponent
+    LoginSignupComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,

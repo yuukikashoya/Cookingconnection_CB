@@ -7,6 +7,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { LoginSignupComponent } from './login-signup/login-signup.component';
 import { PostEditComponent } from './post-edit/post-edit.component';
 import { PostListComponent } from './post-list/post-list.component';
+import { Comment } from '@angular/compiler';
+import { CommentComponent } from './comment/comment.component';
 
 const routes: Routes = [
   {path: 'post-list',component:PostListComponent },
@@ -17,6 +19,7 @@ const routes: Routes = [
   {path: 'gallery',component:GalleryComponent },
   {path: 'contactUs',component:ContactUsComponent },
   {path: 'login',component:LoginSignupComponent },
+  {path: 'comments',component:CommentComponent},  
 ];
 
 @NgModule({

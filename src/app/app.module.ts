@@ -19,8 +19,17 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginSignupComponent } from './login-signup/login-signup.component';
-import { FormsModule } from '@angular/forms';
 
+import { Gallery2Component } from './gallery2/gallery2.component';
+import { EggComponent } from './egg/egg.component';
+import { SpinachComponent } from './spinach/spinach.component';
+import { GarlicbreadComponent } from './garlicbread/garlicbread.component';
+import { ShrimpComponent } from './shrimp/shrimp.component';
+import { MisoComponent } from './miso/miso.component';
+import { TantanmenComponent } from './tantanmen/tantanmen.component';
+import { CurryComponent } from './curry/curry.component';
+import { KimchiComponent } from './kimchi/kimchi.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +42,16 @@ import { FormsModule } from '@angular/forms';
     GalleryComponent,
     ContactUsComponent,
     FooterComponent,
-    LoginSignupComponent
+    LoginSignupComponent,
+    Gallery2Component,
+    EggComponent,
+    SpinachComponent,
+    GarlicbreadComponent,
+    ShrimpComponent,
+    MisoComponent,
+    TantanmenComponent,
+    CurryComponent,
+    KimchiComponent
   ],
   imports: [
     BrowserModule,

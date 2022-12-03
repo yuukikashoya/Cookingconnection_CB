@@ -23,6 +23,7 @@ import { TantanmenComponent } from './tantanmen/tantanmen.component';
 import { CurryComponent } from './curry/curry.component';
 import { KimchiComponent } from './kimchi/kimchi.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

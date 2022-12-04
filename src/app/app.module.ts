@@ -45,8 +45,7 @@ import { CommentComponent } from './comment/comment.component';
     ContactUsComponent,
     FooterComponent,
     LoginSignupComponent,
-    CommentComponent
-    LoginSignupComponent,
+    CommentComponent,
     Gallery2Component,
     EggComponent,
     SpinachComponent,

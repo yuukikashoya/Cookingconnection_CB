@@ -30,6 +30,8 @@ import { TantanmenComponent } from './tantanmen/tantanmen.component';
 import { CurryComponent } from './curry/curry.component';
 import { KimchiComponent } from './kimchi/kimchi.component';
 import { FormsModule } from '@angular/forms';
+import { CommentComponent } from './comment/comment.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +44,8 @@ import { FormsModule } from '@angular/forms';
     GalleryComponent,
     ContactUsComponent,
     FooterComponent,
+    LoginSignupComponent,
+    CommentComponent
     LoginSignupComponent,
     Gallery2Component,
     EggComponent,

@@ -15,6 +15,7 @@ import { PostListComponent } from './post-list/post-list.component';
 import { ShrimpComponent } from './shrimp/shrimp.component';
 import { SpinachComponent } from './spinach/spinach.component';
 import { TantanmenComponent } from './tantanmen/tantanmen.component';
+import { CommentComponent } from './comment/comment.component';
 
 const routes: Routes = [
   {path: 'post-list',component:PostListComponent },
@@ -42,6 +43,7 @@ const routes: Routes = [
 
 
 
+  {path: 'comments',component:CommentComponent},  
 ];
 
 @NgModule({

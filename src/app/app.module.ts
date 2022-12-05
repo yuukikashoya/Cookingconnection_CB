@@ -1,6 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { environment } from '../environments/environment';
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostComponent } from './post/post.component';
@@ -14,6 +20,16 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginSignupComponent } from './login-signup/login-signup.component';
 
+import { Gallery2Component } from './gallery2/gallery2.component';
+import { EggComponent } from './egg/egg.component';
+import { SpinachComponent } from './spinach/spinach.component';
+import { GarlicbreadComponent } from './garlicbread/garlicbread.component';
+import { ShrimpComponent } from './shrimp/shrimp.component';
+import { MisoComponent } from './miso/miso.component';
+import { TantanmenComponent } from './tantanmen/tantanmen.component';
+import { CurryComponent } from './curry/curry.component';
+import { KimchiComponent } from './kimchi/kimchi.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,11 +42,23 @@ import { LoginSignupComponent } from './login-signup/login-signup.component';
     GalleryComponent,
     ContactUsComponent,
     FooterComponent,
-    LoginSignupComponent
+    LoginSignupComponent,
+    Gallery2Component,
+    EggComponent,
+    SpinachComponent,
+    GarlicbreadComponent,
+    ShrimpComponent,
+    MisoComponent,
+    TantanmenComponent,
+    CurryComponent,
+    KimchiComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

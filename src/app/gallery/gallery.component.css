@@ -68,7 +68,7 @@
 
 .Gallery_Container {
     max-width: 100%;
-   overflow: auto;
+    overflow: auto;
     padding-top: 110px;
     padding-left:110px;
     margin-left: 25px;
@@ -93,6 +93,7 @@
   .Gallery img {
     width: 100%;
     height: auto;
+  
     
     
   }
@@ -100,6 +101,7 @@
   .Desc {
     color: rgb(19, 18, 18);
     font-family: 'Roboto', sans-serif;
+    margin: 10px;
     padding: 15px;
   }
   a {

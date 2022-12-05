@@ -3,19 +3,21 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { CurryComponent } from './curry/curry.component';
-import { EggComponent } from './egg/egg.component';
+import { CurryComponent } from './att/curry/curry.component';
+import { EggComponent } from './att/egg/egg.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { GarlicbreadComponent } from './garlicbread/garlicbread.component';
-import { KimchiComponent } from './kimchi/kimchi.component';
+import { GarlicbreadComponent } from './att/garlicbread/garlicbread.component';
+import { KimchiComponent } from './att/kimchi/kimchi.component';
 import { LoginSignupComponent } from './login-signup/login-signup.component';
-import { MisoComponent } from './miso/miso.component';
+import { MisoComponent } from './att/miso/miso.component';
 import { PostEditComponent } from './post-edit/post-edit.component';
 import { PostListComponent } from './post-list/post-list.component';
-import { ShrimpComponent } from './shrimp/shrimp.component';
-import { SpinachComponent } from './spinach/spinach.component';
-import { TantanmenComponent } from './tantanmen/tantanmen.component';
+import { ShrimpComponent } from './att/shrimp/shrimp.component';
+import { SpinachComponent } from './att/spinach/spinach.component';
+import { TantanmenComponent } from './att/tantanmen/tantanmen.component';
 import { CommentComponent } from './comment/comment.component';
+// import { Gallery2Component } from './gallery2/gallery2.component';
+// import { IndcurrComponent } from './att/indcurr/indcurr.component';
 
 const routes: Routes = [
   {path: 'post-list',component:PostListComponent },
@@ -34,12 +36,8 @@ const routes: Routes = [
   {path: 'tantanmen',component:TantanmenComponent},
   {path: 'curry',component:CurryComponent},
   {path: 'kimchi',component:KimchiComponent},
-
-
-
-
-
-
+  // { path: 'indcurr', component:IndcurrComponent },
+  // {path: 'att', redirectTo:'indcurr',pathMatch:'full' },
 
 
 

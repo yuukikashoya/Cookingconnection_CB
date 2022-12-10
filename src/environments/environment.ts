@@ -4,13 +4,15 @@
 
 export const environment = {
   production: false,
-  firebase : {
-    apiKey: "AIzaSyBvSVc5HLudy5ybMwxry1Er1NW4yczumOs",
-    authDomain: "realtime-42afc.firebaseapp.com",
-    projectId: "realtime-42afc",
-    storageBucket: "realtime-42afc.appspot.com",
-    messagingSenderId: "769323570982",
-    appId: "1:769323570982:web:9881a051d264798b5d93e7"
+  firebase: {
+    projectId: 'ccdatabase-c8961',
+    appId: '1:337082144996:web:2a6f2d651b138faeec74f1',
+    databaseURL: 'https://ccdatabase-c8961-default-rtdb.firebaseio.com',
+    storageBucket: 'ccdatabase-c8961.appspot.com',
+    apiKey: 'AIzaSyD3KHQxRW62Fx-WVxBhJprNnCUB9LQlkn4',
+    authDomain: 'ccdatabase-c8961.firebaseapp.com',
+    messagingSenderId: '337082144996',
+    measurementId: 'G-073ZLN4FMP',
   }
 };
 

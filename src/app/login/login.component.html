@@ -1,0 +1,39 @@
+
+
+
+<div class="all">
+  
+
+    <div id="First">
+        <form #LogInForm="ngForm" (ngSubmit)="registerUser(LogInForm.value)" style="border:1px solid rgb(188, 170, 4)">
+            <div class="container">
+        <b>
+              <h1>Login</h1>
+                <p>Welcome Back!</p>
+                <p> ノ( ^o^)ノ</p></b>
+                 <hr>
+        
+              <label for="email"><b>Username</b></label><br>
+              <input class="line" ngModel id="user" type="text" placeholder="Enter Username/Email" name="email" required>
+              <br>
+              <label for="password"><b>Password</b></label><br>
+              <input ngModel class="line" id ="pass" type="password" placeholder="Enter Password" name="password" required>
+              <br>
+              <button id = "cook" type="submit">Login</button>
+              <br>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            
+              <span class="psw">Forgot <a href="#">password?</a></span><br>
+              <button type="submit" class="cancelbtn">Cancel</button>
+               
+        </div>
+        </form>
+        </div>
+          
+
+    </div>
+        
+        
+    

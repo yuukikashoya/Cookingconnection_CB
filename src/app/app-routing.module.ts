@@ -16,6 +16,8 @@ import { ShrimpComponent } from './att/shrimp/shrimp.component';
 import { SpinachComponent } from './att/spinach/spinach.component';
 import { TantanmenComponent } from './att/tantanmen/tantanmen.component';
 import { CommentComponent } from './comment/comment.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 // import { Gallery2Component } from './gallery2/gallery2.component';
 // import { IndcurrComponent } from './att/indcurr/indcurr.component';
 
@@ -36,8 +38,8 @@ const routes: Routes = [
   {path: 'tantanmen',component:TantanmenComponent},
   {path: 'curry',component:CurryComponent},
   {path: 'kimchi',component:KimchiComponent},
-  // { path: 'indcurr', component:IndcurrComponent },
-  // {path: 'att', redirectTo:'indcurr',pathMatch:'full' },
+  {path: 'log',component:LoginComponent},
+  {path: 'sign',component:SignupComponent},
 
 
 
@@ -49,4 +51,7 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const Bitch = [PostEditComponent,PostListComponent,AuthenticationComponent,AboutComponent,GalleryComponent,ContactUsComponent,EggComponent,SpinachComponent,GarlicbreadComponent,ShrimpComponent,MisoComponent,TantanmenComponent,CurryComponent,KimchiComponent]
+export const Bitch = [PostEditComponent,PostListComponent,AuthenticationComponent,
+  AboutComponent,GalleryComponent,ContactUsComponent,EggComponent,SpinachComponent,
+  GarlicbreadComponent,ShrimpComponent,MisoComponent,TantanmenComponent,CurryComponent,
+  KimchiComponent,LoginComponent,SignupComponent]

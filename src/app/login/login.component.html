@@ -5,7 +5,7 @@
   
 
     <div id="First">
-        <form style="border:1px solid rgb(188, 170, 4)">
+        <form #LogInForm="ngForm" (ngSubmit)="registerUser(LogInForm.value)" style="border:1px solid rgb(188, 170, 4)">
             <div class="container">
         <b>
               <h1>Login</h1>
@@ -13,11 +13,11 @@
                 <p> ノ( ^o^)ノ</p></b>
                  <hr>
         
-              <label for="uname"><b>Username</b></label><br>
-              <input class="line" ngModel id="user" type="text" placeholder="Enter Username/Email" name="uname" required>
+              <label for="email"><b>Username</b></label><br>
+              <input class="line" ngModel id="user" type="text" placeholder="Enter Username/Email" name="email" required>
               <br>
-              <label for="psw"><b>Password</b></label><br>
-              <input ngModel class="line" id ="pass" type="password" placeholder="Enter Password" name="psw" required>
+              <label for="password"><b>Password</b></label><br>
+              <input ngModel class="line" id ="pass" type="password" placeholder="Enter Password" name="password" required>
               <br>
               <button id = "cook" type="submit">Login</button>
               <br>
@@ -26,7 +26,7 @@
               </label>
             
               <span class="psw">Forgot <a href="#">password?</a></span><br>
-              <button type="button" class="cancelbtn">Cancel</button>
+              <button type="submit" class="cancelbtn">Cancel</button>
                
         </div>
         </form>

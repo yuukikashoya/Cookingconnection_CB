@@ -1,1 +1,39 @@
-<p>post-edit works!</p>
+
+
+<div class="all">
+
+          
+    <div id = "second">
+    <form #LogInForm="ngForm" (ngSubmit)="(LogInForm.value)" style="border:1px solid rgb(168, 161, 101)">
+      <div class="container1">
+      <b><h1>Change password</h1>
+
+        <p>(◕‿↼)</p></b>  
+        <hr>
+    
+        <label for="username"><b>Old Password</b></label><br>
+        <input id="email" ngModel type="password" placeholder="Username" name="username" required>
+        <br>
+        <label for="email"><b>New Password</b></label><br>
+        <input id="email" ngModel type="password" placeholder="Email" name="email" required>
+        <br>
+        <label for="password"><b>retype Password</b></label><br>
+        <input id="pass" ngModel type="password" placeholder="Password" name="password" required>
+        <br>
+        <!-- <label for="psw-repeat"><b>Repeat Password</b></label><br>
+        <input id="repeat" ngModel type="password"  placeholder="Repeat Password" name="psw-repeat" required>
+     -->
+        <div class="clearfix">
+          <button id="up" type="submit" class="cancelbtn1 ">Save</button>
+
+          <br>
+
+          
+         
+        </div>
+      </div>
+    </form>
+    </div>
+</div>
+    
+    

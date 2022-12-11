@@ -28,15 +28,12 @@ export class LoginComponent implements OnInit {
 
 
   //get value
-  const db = getDatabase();
-  const starCountRef = ref(db, 'users/' + user.uid );
-  onValue(starCountRef, (snapshot) => {
-    const data = snapshot.val();
 
-    localStorage.setItem('token',data.username);
+    sessionStorage.setItem('id',user.uid);
+
     this.post.log(true)
           this.router.navigate(['/aut'])
-  });
+
 
 
   update(ref(this.database, 'users/' + user.uid),{

@@ -25,7 +25,7 @@ import { AuthGuard } from './auth.guard';
 const routes: Routes = [
   {path: 'post-list',component:PostListComponent,canActivate:[AuthGuard] },
   {path: 'aut',component:AuthenticationComponent,canActivate:[AuthGuard]  },
-  {path: 'post-edit',component:PostEditComponent },
+  {path: 'edit',component:PostEditComponent },
   {path: '',redirectTo:'log',pathMatch:'full' },
   {path: 'about',component:AboutComponent,canActivate:[AuthGuard] },
   {path: 'gallery',component:GalleryComponent,canActivate:[AuthGuard]  },

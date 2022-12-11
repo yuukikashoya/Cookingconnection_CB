@@ -67,30 +67,18 @@
 			</p>
 		</div>
 	</div>
-	<form class="form-block">
+	<form #comment="ngForm" (ngSubmit)="com(comment.value)" class="form-block">
 		<div class="row">
-			<div class="col-xs-12 col-sm-6">
-				<div class="form-group fl_icon">
-
-					<h3>NAME</h3>
-					<input class="form-input" type="text" placeholder="Your name">
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-6 fl_icon">
-				<div class="form-group fl_icon">
-					<h3>EMAIL</h3>
-					<input class="form-input" type="text" placeholder="Your email">
-				</div>
-			</div>
 			<div class="col-xs-12">									
 				<div class="form-group">
 					<h3>MESSAGE</h3>
-					<textarea class="form-input" required="" placeholder="Your text"></textarea>
+					<textarea class="form-input" required="" ngModel name="comment" placeholder="Your text"></textarea>
 				</div>
 			</div>
 			<button class="button-28" role="button">SUBMIT</button>
 
 		</div>
 	</form>
+	<a class="button-28" role="button"  (click)="test()">test</a>
 </div>
 </div>

@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Auth, createUserWithEmailAndPassword,signInWithEmailAndPassword  } from "@angular/fire/auth";
-import { Database,set,ref,update } from '@angular/fire/database';
+import { Database,set,ref,update,onValue,getDatabase } from '@angular/fire/database';
 import {  Router } from '@angular/router';
+import { PostService } from '../post.service';
+
 
 @Component({
   selector: 'app-login',
@@ -10,7 +12,7 @@ import {  Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(public auth: Auth,public database:Database,private router:Router) { }
+  constructor(public auth: Auth,public database:Database,private router:Router ,private post:PostService) { }
 
   ngOnInit(): void {
   }
@@ -23,13 +25,25 @@ export class LoginComponent implements OnInit {
       this.router.navigate(['/aut'])
     alert('user login');
   const date = new Date();
+
+
+  //get value
+  const db = getDatabase();
+  const starCountRef = ref(db, 'users/' + user.uid );
+  onValue(starCountRef, (snapshot) => {
+    const data = snapshot.val();
+    localStorage.setItem('token','true');
+    this.post.log(true)
+  });
+
+
   update(ref(this.database, 'users/' + user.uid),{
   last_login:date
 
   }
   );
   
-      // ...
+      // creadential dint match
     },err=>{
       alert(err.message)
       this.router.navigate(['/log'])

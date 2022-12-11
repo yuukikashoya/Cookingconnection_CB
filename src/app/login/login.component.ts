@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
     .then((userCredential) => {
       // Signed in 
       const user = userCredential.user;
-      this.router.navigate(['/aut'])
+
     alert('user login');
   const date = new Date();
 
@@ -32,8 +32,10 @@ export class LoginComponent implements OnInit {
   const starCountRef = ref(db, 'users/' + user.uid );
   onValue(starCountRef, (snapshot) => {
     const data = snapshot.val();
-    localStorage.setItem('token','true');
+
+    localStorage.setItem('token',data.username);
     this.post.log(true)
+          this.router.navigate(['/aut'])
   });
 
 

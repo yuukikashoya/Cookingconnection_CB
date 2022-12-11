@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Auth, createUserWithEmailAndPassword,signInWithEmailAndPassword  } from "@angular/fire/auth";
 import { Database,set,ref } from '@angular/fire/database';
+import {  Router } from '@angular/router';
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -8,7 +9,7 @@ import { Database,set,ref } from '@angular/fire/database';
 })
 export class SignupComponent implements OnInit {
 
-   constructor(public auth: Auth,public database:Database) { }
+   constructor(public auth: Auth,public database:Database,private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -25,6 +26,7 @@ export class SignupComponent implements OnInit {
           email:value.email
         })
 alert('user created');
+this.router.navigate(['/log'])
       })
       .catch((error) => {
         const errorCode = error.code;

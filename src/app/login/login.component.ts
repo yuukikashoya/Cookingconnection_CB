@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Auth, createUserWithEmailAndPassword,signInWithEmailAndPassword  } from "@angular/fire/auth";
 import { Database,set,ref,update } from '@angular/fire/database';
+import {  Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,7 +10,7 @@ import { Database,set,ref,update } from '@angular/fire/database';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(public auth: Auth,public database:Database) { }
+  constructor(public auth: Auth,public database:Database,private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -19,6 +20,7 @@ export class LoginComponent implements OnInit {
     .then((userCredential) => {
       // Signed in 
       const user = userCredential.user;
+      this.router.navigate(['/aut'])
     alert('user login');
   const date = new Date();
   update(ref(this.database, 'users/' + user.uid),{

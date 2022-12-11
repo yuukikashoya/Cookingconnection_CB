@@ -26,9 +26,13 @@ export class LoginComponent implements OnInit {
   update(ref(this.database, 'users/' + user.uid),{
   last_login:date
 
-  });
+  }
+  );
   
       // ...
+    },err=>{
+      alert(err.message)
+      this.router.navigate(['/log'])
     })
     .catch((error) => {
       const errorCode = error.code;

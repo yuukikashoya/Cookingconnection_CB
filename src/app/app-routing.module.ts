@@ -16,32 +16,35 @@ import { ShrimpComponent } from './att/shrimp/shrimp.component';
 import { SpinachComponent } from './att/spinach/spinach.component';
 import { TantanmenComponent } from './att/tantanmen/tantanmen.component';
 import { CommentComponent } from './comment/comment.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 // import { Gallery2Component } from './gallery2/gallery2.component';
 // import { IndcurrComponent } from './att/indcurr/indcurr.component';
+import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
-  {path: 'post-list',component:PostListComponent },
-  {path: 'aut',component:AuthenticationComponent },
-  {path: 'post-edit',component:PostEditComponent },
-  {path: '',redirectTo:'aut',pathMatch:'full' },
-  {path: 'about',component:AboutComponent},
-  {path: 'gallery',component:GalleryComponent },
-  {path: 'contactUs',component:ContactUsComponent },
-  {path: 'login',component:LoginSignupComponent },
-  {path: 'egg',component:EggComponent },
-  {path: 'spinach',component:SpinachComponent },
-  {path: 'garlicbread',component:GarlicbreadComponent },
-  {path: 'shrimp',component:ShrimpComponent},
-  {path: 'miso',component:MisoComponent},
-  {path: 'tantanmen',component:TantanmenComponent},
-  {path: 'curry',component:CurryComponent},
-  {path: 'kimchi',component:KimchiComponent},
-  // { path: 'indcurr', component:IndcurrComponent },
-  // {path: 'att', redirectTo:'indcurr',pathMatch:'full' },
+  {path: 'post-list',component:PostListComponent,canActivate:[AuthGuard] },
+  {path: 'aut',component:AuthenticationComponent,canActivate:[AuthGuard]  },
+  {path: 'edit',component:PostEditComponent },
+  {path: '',redirectTo:'log',pathMatch:'full' },
+  {path: 'about',component:AboutComponent,canActivate:[AuthGuard] },
+  {path: 'gallery',component:GalleryComponent,canActivate:[AuthGuard]  },
+  {path: 'contactUs',component:ContactUsComponent,canActivate:[AuthGuard]  },
+  {path: 'login',component:LoginSignupComponent ,canActivate:[AuthGuard] },
+  {path: 'egg',component:EggComponent,canActivate:[AuthGuard]  },
+  {path: 'spinach',component:SpinachComponent ,canActivate:[AuthGuard] },
+  {path: 'garlicbread',component:GarlicbreadComponent ,canActivate:[AuthGuard] },
+  {path: 'shrimp',component:ShrimpComponent,canActivate:[AuthGuard] },
+  {path: 'miso',component:MisoComponent,canActivate:[AuthGuard] },
+  {path: 'tantanmen',component:TantanmenComponent,canActivate:[AuthGuard] },
+  {path: 'curry',component:CurryComponent,canActivate:[AuthGuard] },
+  {path: 'kimchi',component:KimchiComponent,canActivate:[AuthGuard] },
+  {path: 'log',component:LoginComponent},
+  {path: 'sign',component:SignupComponent},
 
 
 
-  {path: 'comments',component:CommentComponent},  
+  {path: 'comments',component:CommentComponent ,canActivate:[AuthGuard] },  
 ];
 
 @NgModule({
@@ -49,4 +52,7 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const Bitch = [PostEditComponent,PostListComponent,AuthenticationComponent,AboutComponent,GalleryComponent,ContactUsComponent,EggComponent,SpinachComponent,GarlicbreadComponent,ShrimpComponent,MisoComponent,TantanmenComponent,CurryComponent,KimchiComponent]
+export const Bitch = [PostEditComponent,PostListComponent,AuthenticationComponent,
+  AboutComponent,GalleryComponent,ContactUsComponent,EggComponent,SpinachComponent,
+  GarlicbreadComponent,ShrimpComponent,MisoComponent,TantanmenComponent,CurryComponent,
+  KimchiComponent,LoginComponent,SignupComponent]

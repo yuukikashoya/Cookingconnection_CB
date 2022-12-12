@@ -84,9 +84,10 @@
    text-align: center;
   }
   div.Gallery {
-    margin: 5px;
+    margin: 1em;
     float: left;
     width: 250px;
+    height: 500px;
     
   
   }

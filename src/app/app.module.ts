@@ -31,6 +31,12 @@ import { CurryComponent } from './att/curry/curry.component';
 import { KimchiComponent } from './att/kimchi/kimchi.component';
 import { FormsModule } from '@angular/forms';
 import { CommentComponent } from './comment/comment.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { AuthGuard } from './auth.guard';
 
 
 @NgModule({
@@ -55,6 +61,8 @@ import { CommentComponent } from './comment/comment.component';
     TantanmenComponent,
     CurryComponent,
     KimchiComponent,
+    LoginComponent,
+    SignupComponent,
   
   ],
   imports: [
@@ -62,9 +70,12 @@ import { CommentComponent } from './comment/comment.component';
     AppRoutingModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideDatabase(() => getDatabase())
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

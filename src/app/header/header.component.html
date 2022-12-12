@@ -16,13 +16,13 @@
 	<a  style="text-decoration:none" routerLink="about"><li>About</li></a>
 	<a  style="text-decoration:none" routerLink="gallery"><li>Recipes</li></a>
 	<a  style="text-decoration:none" routerLink="contactUs"><li>Contact us</li></a>
-	<li>Comments</li>
+	<a  style="text-decoration:none" routerLink="comments"><li>Comments</li></a>
 <div class="dropdown">
   <li class="openbtn">☰</li>
   <div class="dropdown-content">
-    <a  style="text-decoration:none" routerLink="login"><li>Settings</li></a>
-    <a  style="text-decoration:none" routerLink="login"><li>Login</li></a>
-    <a  style="text-decoration:none" routerLink="login"><li>Sign Up</li></a>
+    <a  style="text-decoration:none" routerLink="edit"><li>Settings</li></a>
+    <a  style="text-decoration:none"  (click)="signout()" ><li>Log Out</li></a>
+
   </div>
 </div>
 

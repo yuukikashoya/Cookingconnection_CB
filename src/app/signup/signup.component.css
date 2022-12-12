@@ -1,0 +1,182 @@
+
+b{
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px ;
+    font-size: 2em;
+    -webkit-text-stroke-color:white ;
+}
+body{
+    background-color: rgb(203, 46, 28);
+  }
+  
+  h1{
+      text-align: center;
+      font-family:fantasy;
+      color: rgb(134, 78, 6);
+      text-decoration:coral;
+      font:bold;
+  }
+  form {
+      
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: 1px solid rgb(220, 206, 143);
+      box-sizing: border-box;
+    }
+    #First{
+    background-size: cover;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-image:url('https://i.pinimg.com/originals/fa/87/6f/fa876ffaf00c3a6645fe43a56aa10fe3.gif') ;
+    background-position: center;
+    cursor:grab;
+    background-color: rgb(134, 78, 6);
+    }
+    
+    button {
+      background-color:rgb(247, 202, 0);
+      color:antiquewhite;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      width: 100%;
+      font-family: 'Courier New', Courier, monospace;
+    }
+  .all{
+    background-color: brown;
+  }
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color:darkolivegreen;
+    }
+      
+    .container {
+      padding: 170px;
+      text-align: center;
+      
+    }
+    
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+      .cancelbtn {
+        width: 100%;
+        
+      }
+    }
+    .line{
+      width: 50%;
+    }
+   #user{
+      width: 50%;
+   }
+   #cook{
+      width: 50%;
+   }
+   #pass{
+      width: 50%;
+   }
+   
+  
+   *{box-sizing: border-box}
+  
+    input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  button {
+    background-color: burlywood;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+    cursor:grab;
+  }
+  
+  .cancelbtn1 {
+    padding: 14px 20px;
+    background-color:darkolivegreen;
+  }
+  
+  .cancelbtn1, .signupbtn1 {
+    width: 50%;
+    cursor: pointer;
+  }
+  
+  .container1 {
+    padding: 17px;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 300px) {
+    .cancelbtn1, .signupbtn1 {
+      width: 100%;
+    }
+  }
+  #second{
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    background-image: url('https://i.pinimg.com/originals/f9/0c/7b/f90c7be43f75570bbe9b6aa82c88777a.gif');
+    background-position: center;
+    background-size: cover;
+    cursor: grab;
+  }
+  #fname{
+  width: 50%;
+  }
+  #lname{
+    width: 50%;
+  }
+  #age{
+    width: 50%;
+  }
+  #usrnme{
+    width: 50%;
+  }
+  #email{
+    width: 50%;
+  }
+  #pass{
+    width: 50%;
+  }
+  #repeat{
+    width: 50%;
+  }
+  #up,#no{
+  width: 30%;
+  }
+  
+  

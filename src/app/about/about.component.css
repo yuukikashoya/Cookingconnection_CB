@@ -1,0 +1,25 @@
+#sect1 { 
+    width: auto; 
+    height: 650px;  
+    color: #fff;
+    background-image: url("../../assets/img/hero.png");  
+    background-size: 100% ;  
+    background-size: cover;  
+}   
+
+.sec2{
+    width: auto; 
+    height: 600px;  
+    color: #fff;
+    background-image: url("../../assets/img/bg.png");  
+    background-size: 100% ;  
+    background-size: cover;  
+    margin-bottom: 5px;
+}
+.text{
+    margin-top: 5px;
+    font-size: 18px;
+    padding-top: 10%;
+    margin-left: 10px;
+    text-align:justify;
+}

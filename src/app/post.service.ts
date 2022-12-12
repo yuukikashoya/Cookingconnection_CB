@@ -48,5 +48,15 @@ export class PostService{
    getPost(){
       return this.postList
    }
+   
+private set = false
+   log(value:boolean){
+this.set = value
+
+   }
+   get ara () {
+    return this.set
+   }
+
 }
 

@@ -20,16 +20,25 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginSignupComponent } from './login-signup/login-signup.component';
 
-import { Gallery2Component } from './gallery2/gallery2.component';
-import { EggComponent } from './egg/egg.component';
-import { SpinachComponent } from './spinach/spinach.component';
-import { GarlicbreadComponent } from './garlicbread/garlicbread.component';
-import { ShrimpComponent } from './shrimp/shrimp.component';
-import { MisoComponent } from './miso/miso.component';
-import { TantanmenComponent } from './tantanmen/tantanmen.component';
-import { CurryComponent } from './curry/curry.component';
-import { KimchiComponent } from './kimchi/kimchi.component';
+// import { Gallery2Component } from './gallery2/gallery2.component';
+import { EggComponent } from './att/egg/egg.component';
+import { SpinachComponent } from './att/spinach/spinach.component';
+import { GarlicbreadComponent } from './att/garlicbread/garlicbread.component';
+import { ShrimpComponent } from './att/shrimp/shrimp.component';
+import { MisoComponent } from './att/miso/miso.component';
+import { TantanmenComponent } from './att/tantanmen/tantanmen.component';
+import { CurryComponent } from './att/curry/curry.component';
+import { KimchiComponent } from './att/kimchi/kimchi.component';
 import { FormsModule } from '@angular/forms';
+import { CommentComponent } from './comment/comment.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { AuthGuard } from './auth.guard';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +52,7 @@ import { FormsModule } from '@angular/forms';
     ContactUsComponent,
     FooterComponent,
     LoginSignupComponent,
-    Gallery2Component,
+    CommentComponent,
     EggComponent,
     SpinachComponent,
     GarlicbreadComponent,
@@ -51,16 +60,22 @@ import { FormsModule } from '@angular/forms';
     MisoComponent,
     TantanmenComponent,
     CurryComponent,
-    KimchiComponent
+    KimchiComponent,
+    LoginComponent,
+    SignupComponent,
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideDatabase(() => getDatabase())
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
